@@ -1,0 +1,26 @@
+GET http://localhost:3009/alumnos HTTP/1.1
+
+###
+GET http://localhost:3009/alumnos/6 HTTP/1.1
+
+### 
+POST http://localhost:3009/alumnos HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "apellido1": "García"
+}
+
+###
+PUT http://localhost:3009/alumnos/6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "año":"l",
+    "materias":"mate"
+}
+
+
+###
+DELETE  http://localhost:3009/alumnos/6 HTTP/1.1
